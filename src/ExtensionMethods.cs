@@ -295,6 +295,11 @@ namespace AdventOfCode
             return new string(source.Reverse().ToArray());
         }
 
+        public static IEnumerable<string> Blocks(this string input)
+        {
+            return input.Split(new string[] { $"{Environment.NewLine}{Environment.NewLine}", "\n\n" }, StringSplitOptions.RemoveEmptyEntries);
+        }
+
         public static IEnumerable<string> Lines(this string input)
         {
             return input.Split(new string[] { Environment.NewLine, "\n" }, StringSplitOptions.RemoveEmptyEntries);

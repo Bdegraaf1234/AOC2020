@@ -19,7 +19,7 @@ namespace AOC2020Tests
 			string input = File.ReadAllText($@"C:\Users\3765563\source\repos\AOC2020\tests\AOC2020Tests\input\day{dayNum}\Day{dayNum}Example.txt");
 			var ans = ThisDay.PartOne(input);
 
-			Assert.AreEqual("7", ans);
+			Assert.AreEqual("2", ans);
 		}
 
 		[DataTestMethod]
@@ -29,7 +29,7 @@ namespace AOC2020Tests
 
 			var ans = ThisDay.PartOne(input);
 
-			Assert.AreEqual("232", ans);
+			Assert.AreEqual("200", ans);
 		}
 
 
@@ -40,7 +40,7 @@ namespace AOC2020Tests
 
 			var ans = ThisDay.PartTwo(input);
 
-			Assert.AreEqual("336", ans);
+			Assert.AreEqual("2", ans);
 		}
 
 		[DataTestMethod]
@@ -50,7 +50,7 @@ namespace AOC2020Tests
 
 			var ans = ThisDay.PartTwo(input);
 
-			Assert.AreEqual("3952291680", ans);
+			Assert.AreEqual("116", ans);
 		}
 	}
 }
