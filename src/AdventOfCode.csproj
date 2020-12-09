@@ -5,6 +5,8 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <StartupObject>AdventOfCode.App</StartupObject>
+    <RootNamespace>AOC2020</RootNamespace>
+    <AssemblyName>AOC2020</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

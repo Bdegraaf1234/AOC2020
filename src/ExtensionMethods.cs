@@ -24,6 +24,40 @@ namespace AdventOfCode
         West
     }
 
+    public static class MyHelpers
+	{
+        /// <summary>
+        /// Generates all possible combinations of the given indices.
+        /// </summary>
+        /// <param name="size"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public static List<int[]> GenerateCombinations(int size, int min, int max)
+        {
+            List<int[]> all = new List<int[]>();
+            if (size > 0)
+                GenerateCombinationsRecursive(all, new int[size], 0, min, max);
+            return all;
+        }
+
+        private static void GenerateCombinationsRecursive(List<int[]> all, int[] combis, int pos, int min, int max)
+        {
+            int old = combis[pos];
+            for (int c = min; c <= max; c++)
+            {
+                combis[pos] = c;
+                if (combis.Length - 1 == pos)
+                    all.Add((int[])combis.Clone());
+                else
+                {
+                    GenerateCombinationsRecursive(all, combis, pos + 1, min, max);
+                }
+            }
+            combis[pos] = old;
+        }
+    }
+
     public static class DirectionExtensions
     {
         public static Direction TurnLeft(this Direction dir)

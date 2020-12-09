@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode", "AdventOfCode.csproj", "{85FD56A1-6A84-477B-B6F3-5CACB631C8D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode", "AdventOfCode.csproj", "{85FD56A1-6A84-477B-B6F3-5CACB631C8D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1E63AE82-832B-4180-B7E4-56850AF626FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AOC2020Tests", "..\tests\AOC2020Tests\AOC2020Tests.csproj", "{FFE8B0C7-23D9-45B0-8FCA-7A734F79FFF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Input", "Input", "{D5341077-6B93-49F6-829E-1F6A50188025}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day2", "Day2", "{F88F4813-AC55-4AEF-971E-BACDB9F84115}"
+	ProjectSection(SolutionItems) = preProject
+		..\tests\AOC2020Tests\input\day2\Day2Input.txt = ..\tests\AOC2020Tests\input\day2\Day2Input.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +26,18 @@ Global
 		{85FD56A1-6A84-477B-B6F3-5CACB631C8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85FD56A1-6A84-477B-B6F3-5CACB631C8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85FD56A1-6A84-477B-B6F3-5CACB631C8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE8B0C7-23D9-45B0-8FCA-7A734F79FFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE8B0C7-23D9-45B0-8FCA-7A734F79FFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE8B0C7-23D9-45B0-8FCA-7A734F79FFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE8B0C7-23D9-45B0-8FCA-7A734F79FFF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FFE8B0C7-23D9-45B0-8FCA-7A734F79FFF9} = {1E63AE82-832B-4180-B7E4-56850AF626FC}
+		{D5341077-6B93-49F6-829E-1F6A50188025} = {1E63AE82-832B-4180-B7E4-56850AF626FC}
+		{F88F4813-AC55-4AEF-971E-BACDB9F84115} = {D5341077-6B93-49F6-829E-1F6A50188025}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F505DBC-BCAB-4E11-BFCA-D8B04D9BDA76}
