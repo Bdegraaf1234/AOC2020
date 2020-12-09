@@ -10,16 +10,17 @@ namespace AOC2020Tests
 	[TestClass]
 	public class Day6Tests
 	{
-		private const int dayNum = 5;
-		private AdventOfCode.BaseDay ThisDay = new Day05();
+		private const int dayNum = 6;
+		private AdventOfCode.BaseDay ThisDay = new Day06();
 
 		[DataTestMethod]
 		public void Part1Test1()
 		{
-			string input = "BFFFBBFRRR";
+			string input = File.ReadAllText($@"C:\Users\3765563\source\repos\AOC2020\tests\AOC2020Tests\input\day{dayNum}\Day{dayNum}Example.txt");
+
 			var ans = ThisDay.PartOne(input);
 
-			Assert.AreEqual("567", ans);
+			Assert.AreEqual("11", ans);
 		}
 
 	
@@ -30,8 +31,19 @@ namespace AOC2020Tests
 
 			var ans = ThisDay.PartOne(input);
 
-			Assert.AreEqual("987", ans);
+			Assert.AreEqual("6726", ans);
 		}
+
+		[DataTestMethod]
+		public void Part2Test1()
+		{
+			string input = File.ReadAllText($@"C:\Users\3765563\source\repos\AOC2020\tests\AOC2020Tests\input\day{dayNum}\Day{dayNum}Example.txt");
+
+			var ans = ThisDay.PartTwo(input);
+
+			Assert.AreEqual("6", ans);
+		}
+
 
 		[DataTestMethod]
 		public void Part2Test2()
@@ -40,7 +52,7 @@ namespace AOC2020Tests
 
 			var ans = ThisDay.PartTwo(input);
 
-			Assert.AreEqual("603", ans);
+			Assert.AreEqual("3316", ans);
 		}
 	}
 }
