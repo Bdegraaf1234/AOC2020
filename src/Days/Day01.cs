@@ -9,6 +9,7 @@ namespace AdventOfCode.Days
     {
         public override string PartOne(string input)
         {
+
             throw new NotImplementedException();
         }
 
