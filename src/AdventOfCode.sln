@@ -19,9 +19,25 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day3", "Day3", "{4509E9EF-A76D-4DDA-8E3F-0D96D2A7B393}"
 	ProjectSection(SolutionItems) = preProject
 		..\tests\AOC2020Tests\input\day3\Day3Example.txt = ..\tests\AOC2020Tests\input\day3\Day3Example.txt
+		..\tests\AOC2020Tests\input\day3\Day3Input.txt = ..\tests\AOC2020Tests\input\day3\Day3Input.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day4", "Day4", "{02917607-C1FC-48B3-92B3-0E0A2CDD5F9A}"
+	ProjectSection(SolutionItems) = preProject
+		..\tests\AOC2020Tests\input\day4\Day4Example.txt = ..\tests\AOC2020Tests\input\day4\Day4Example.txt
+		..\tests\AOC2020Tests\input\day4\Day4Input.txt = ..\tests\AOC2020Tests\input\day4\Day4Input.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day5", "Day5", "{EFF17055-2212-42EE-B0C6-A6B665E17DB1}"
+	ProjectSection(SolutionItems) = preProject
+		..\tests\AOC2020Tests\input\day5\Day5Input.txt = ..\tests\AOC2020Tests\input\day5\Day5Input.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day6", "Day6", "{C4001454-EE30-4161-A3F2-DC09E3BE4498}"
+	ProjectSection(SolutionItems) = preProject
+		..\tests\AOC2020Tests\input\day6\Day6Example.txt = ..\tests\AOC2020Tests\input\day6\Day6Example.txt
+		..\tests\AOC2020Tests\input\day6\Day6Input.txt = ..\tests\AOC2020Tests\input\day6\Day6Input.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +63,8 @@ Global
 		{F88F4813-AC55-4AEF-971E-BACDB9F84115} = {D5341077-6B93-49F6-829E-1F6A50188025}
 		{4509E9EF-A76D-4DDA-8E3F-0D96D2A7B393} = {D5341077-6B93-49F6-829E-1F6A50188025}
 		{02917607-C1FC-48B3-92B3-0E0A2CDD5F9A} = {D5341077-6B93-49F6-829E-1F6A50188025}
+		{EFF17055-2212-42EE-B0C6-A6B665E17DB1} = {D5341077-6B93-49F6-829E-1F6A50188025}
+		{C4001454-EE30-4161-A3F2-DC09E3BE4498} = {D5341077-6B93-49F6-829E-1F6A50188025}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F505DBC-BCAB-4E11-BFCA-D8B04D9BDA76}
