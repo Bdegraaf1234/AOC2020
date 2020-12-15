@@ -8,10 +8,10 @@ using System.Reflection;
 namespace AOC2020Tests
 {
 	[TestClass]
-	public class Day6Tests
+	public class Day22Tests
 	{
-		private const int dayNum = 6;
-		private AdventOfCode.BaseDay ThisDay = new Day06();
+		private const int dayNum = 22;
+		private AdventOfCode.BaseDay ThisDay = new Day22();
 
 		[DataTestMethod]
 		public void Part1Test1()
@@ -46,7 +46,6 @@ namespace AOC2020Tests
 
 
 		[DataTestMethod]
-
 		public void Part2Test2()
 		{
 			string input = File.ReadAllText($@"C:\Users\3765563\source\repos\AOC2020\tests\AOC2020Tests\input\day{dayNum}\Day{dayNum}Input.txt");
