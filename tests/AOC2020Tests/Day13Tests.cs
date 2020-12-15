@@ -20,7 +20,7 @@ namespace AOC2020Tests
 
 			var ans = ThisDay.PartOne(input);
 
-			Assert.AreEqual("11", ans);
+			Assert.AreEqual("25", ans);
 		}
 
 	
