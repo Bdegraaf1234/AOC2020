@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -39,7 +40,64 @@ namespace AdventOfCode.Days
 
         public override string PartTwo(string input)
         {
-            throw new NotImplementedException();
+            int turnNum = 1;
+            var nums = input.Split(',').Select(x => int.Parse(x)).ToList();
+            var spoken = new Dictionary<int, int>();
+            int lastNum = 0;
+
+            var queue = new FixedSizedQueue<int>(10);
+
+            foreach (var num in nums)
+            {
+                queue.Enqueue(num);
+				if (num != nums.Last())
+                    spoken.Add(num, turnNum);
+                
+                turnNum++;
+            }
+
+            while (turnNum != 30000001)
+            {
+                if (spoken.TryGetValue(queue.Last(), out int lastIdx))
+                {
+                    spoken[queue.Last()] = turnNum - 1;
+                    queue.Enqueue(turnNum - lastIdx - 1);
+                }
+                else
+                {
+                    spoken[queue.Last()] = turnNum - 1;
+                    queue.Enqueue(0);
+                }
+
+                turnNum++;
+            }
+
+            return queue.Last().ToString();
+        }
+    }
+
+    public class FixedSizedQueue<T> : ConcurrentQueue<T>
+    {
+        private readonly object syncObject = new object();
+
+        public int Size { get; private set; }
+
+        public FixedSizedQueue(int size)
+        {
+            Size = size;
+        }
+
+        public new void Enqueue(T obj)
+        {
+            base.Enqueue(obj);
+            lock (syncObject)
+            {
+                while (base.Count > Size)
+                {
+                    T outObj;
+                    base.TryDequeue(out outObj);
+                }
+            }
         }
     }
 }

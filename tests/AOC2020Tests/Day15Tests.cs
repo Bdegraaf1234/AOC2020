@@ -41,7 +41,7 @@ namespace AOC2020Tests
 
 			var ans = ThisDay.PartTwo(input);
 
-			Assert.AreEqual("6", ans);
+			Assert.AreEqual("175594", ans);
 		}
 
 
