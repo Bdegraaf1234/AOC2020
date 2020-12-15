@@ -20,7 +20,7 @@ namespace AOC2020Tests
 
 			var ans = ThisDay.PartOne(input);
 
-			Assert.AreEqual("11", ans);
+			Assert.AreEqual("436", ans);
 		}
 
 	
@@ -31,7 +31,7 @@ namespace AOC2020Tests
 
 			var ans = ThisDay.PartOne(input);
 
-			Assert.AreEqual("6726", ans);
+			Assert.AreEqual("755", ans);
 		}
 
 		[DataTestMethod]
